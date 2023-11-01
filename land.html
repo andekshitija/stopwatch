@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="land.css">
+  <style>
+    body{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2WL-y_z5u-iPic-r4Gd3FhX2njAJRqpt7ew&usqp=CAU");
+        background-size: contain;
+        background-position: 120px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form class="stopwatch">
+    <input id="start" type="checkbox" />
+    <input id="pause" type="checkbox" />
+    <label class="stopwatch__pause" for="pause"><span>Pause</span></label>
+    <label class="stopwatch__start" for="start"><span>Start</span></label>
+    <button class="stopwatch__reset" id="reset" type="reset"><span>Reset</span></button>
+    <div class="stopwatch__restart stopwatch__control">
+      <div class="reset-button"></div>
+    </div>
+    <div class="stopwatch__stop-start stopwatch__control">
+      <div class="start-button"></div>
+    </div>
+    <div class="stopwatch__shadows"></div>
+    <div class="stopwatch__content"><img class="stopwatch__branding"
+        src="https://assets.codepen.io/605876/avatar.png" />
+      <div class="stopwatch__face">
+        <div class="digit m m--tens">0</div>
+        <div class="digit m m--singles">0</div><span>:</span>
+        <div class="digit second s s--tens">0</div>
+        <div class="digit second s s--singles">0</div><span>.</span>
+        <div class="digit digit--small ms ms--tens">0</div>
+        <div class="digit digit--small ms ms--singles">0</div>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
